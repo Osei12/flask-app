@@ -262,7 +262,7 @@ def download_report():
     
     idx=0
     for member in all_members:
-        sh.write(idx+1, 0, member.id)
+        sh.write(idx+1, 0, str(member.id))
         sh.write(idx+1, 1,  member.surname)
         sh.write(idx+1, 2, member.other_names)
         sh.write(idx+1, 3, member.gender)
